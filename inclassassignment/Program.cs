@@ -9,8 +9,10 @@ namespace inclassassignment
             Console.WriteLine("Please enter the years of experience");
             try
             {
-                string input = Console.ReadLine();
+
+
                 int years = 0;
+                years = int.Parse(Console.ReadLine());
                 switch (years)
                 {
                     case 0:
@@ -37,7 +39,7 @@ namespace inclassassignment
             }
             catch
             {
-                Console.WriteLine("Please enter");
+                Console.WriteLine("Please enter years of expereicne in integer");
 
                 Console.ReadKey(true);
             }    
